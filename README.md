@@ -14,9 +14,14 @@ Gaming Store es una página web de comercio electrónico especializada en produc
 
 ## Capturas de pantalla
 ### Interfaz de usuario
-![Página de inicio](https://github.com/BrandoHanma/Proyecto-web/blob/ea02d465482cb36836dd22be8e352625e761caa4/Proyecto-web/assets/img/bg10.jpg) 
-![Página de productos](Users/testing/Pictures/dog.jpg)
-![Formulario de login](ruta/a/la/imagen/formulario_login.png)
+![Login](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/1(1).png) 
+![Login-Registro](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/2(1).png)
+![Formulario de ](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/3(1).png)
+![Formulario de ](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/4.png)
+![Formulario de ](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/5.png)
+![Formulario de ](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/6.png)
+![Formulario de ](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/3(1).png)
+![Formulario de ](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/3(1).png)
 
 ### Código
 ![Estructura del proyecto](ruta/a/la/imagen/estructura_proyecto.png)
