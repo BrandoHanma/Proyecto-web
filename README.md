@@ -15,8 +15,8 @@ Gaming Store es una página web de comercio electrónico especializada en produc
 
 ## Capturas de pantalla
 ### Interfaz de usuario
-![Página de inicio](C:\Users\testing\Pictures\Icecream Screen Recorder\18.png) 
-![Página de productos](ruta/a/la/imagen/pagina_productos.png)
+![Página de inicio](Users/testing/Pictures/Icecream Screen Recorder/18.png) 
+![Página de productos](Users/testing/Pictures/dog.jpg)
 ![Formulario de login](ruta/a/la/imagen/formulario_login.png)
 
 ### Código
