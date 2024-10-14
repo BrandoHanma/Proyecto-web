@@ -1,4 +1,3 @@
-# Proyecto-web
 # Gaming Store
 
 ## Descripción
@@ -15,7 +14,7 @@ Gaming Store es una página web de comercio electrónico especializada en produc
 
 ## Capturas de pantalla
 ### Interfaz de usuario
-![Página de inicio](Users/testing/Pictures/Icecream Screen Recorder/18.png) 
+![Página de inicio](https://github.com/BrandoHanma/Proyecto-web/blob/ea02d465482cb36836dd22be8e352625e761caa4/Proyecto-web/assets/img/bg10.jpg) 
 ![Página de productos](Users/testing/Pictures/dog.jpg)
 ![Formulario de login](ruta/a/la/imagen/formulario_login.png)
 
