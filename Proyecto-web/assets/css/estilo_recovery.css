@@ -1,0 +1,153 @@
+:root {
+    --neon-purple: #7f13bd;
+    --neon-purple-light: #9a26d9;
+    --neon-purple-dark: #6e0598;
+    --neon-pink: #FF26B0;
+    --neon-blue: #26B0FF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url(../img/bg9.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;    
+    background-attachment: fixed;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+.caja__trasera {
+    width: 100%;
+    max-width: 450px; /* Aumentar el tamaño */
+    height: 550px; /* Aumentar el tamaño */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centrar verticalmente */
+    backdrop-filter: blur(10px);
+    background-color: rgba(8, 0, 76, 0.3);
+    border-radius: 20px; /* Mismo radio que el formulario */
+    box-shadow: 0 0 20px var(--neon-purple);
+    transition: all 0.3s ease;
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+
+.caja__trasera:hover {
+    box-shadow: 0 0 30px var(--neon-purple-light);
+}
+
+.contenedor__login-register {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 400px; /* Igualar tamaño al contenedor trasero */
+    position: absolute; /* Cambiado a absoluto para superponer */
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Centrando en ambos ejes */
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.contenedor__login-register form {
+    width: 100%;
+    padding: 40px 20px; /* Ajustar padding */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px var(--neon-purple);
+    transition: all 0.3s ease;
+}
+
+.contenedor__login-register form h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--neon-purple-light);
+    text-shadow: 0 0 10px var(--neon-purple);
+}
+
+.contenedor__login-register form input {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 16px;
+    outline: none;
+    border-radius: 10px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.contenedor__login-register form input:focus {
+    box-shadow: 0 0 10px var(--neon-blue);
+}
+
+.contenedor__login-register form button {
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: var(--neon-purple);
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contenedor__login-register form button:hover {
+    background: var(--neon-purple-light);
+    box-shadow: 0 0 15px var(--neon-purple);
+}
+
+@media screen and (max-width: 850px) {
+    .caja__trasera {
+        max-width: 350px;
+        height: 400px; /* Ajustar el tamaño */
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .contenedor__login-register {
+        top: 50%; /* Centrar verticalmente */
+        left: 50%; /* Centrar horizontalmente */
+        transform: translate(-50%, -50%); /* Centrando en ambos ejes */
+    }
+
+    .contenedor__login-register form {
+        position: relative;
+    }
+}
+
+@keyframes neonPulse {
+    0% {
+        box-shadow: 0 0 10px var(--neon-purple);
+    }
+    50% {
+        box-shadow: 0 0 20px var(--neon-purple-light), 0 0 30px var(--neon-pink);
+    }
+    100% {
+        box-shadow: 0 0 10px var(--neon-purple);
+    }
+}
+
+.caja__trasera, .contenedor__login-register form {
+    animation: neonPulse 2s infinite;
+}

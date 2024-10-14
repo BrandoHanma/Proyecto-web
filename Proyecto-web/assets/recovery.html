@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña</title>
+    <link rel="stylesheet" href="css/estilo_recovery.css">
+</head>
+<body>
+    <style>
+        body {
+            cursor: url('img/cursor.png'), auto;
+        }
+    </style>
+    <main>
+        <div class="caja__trasera"></div> <!-- Contenedor trasero -->
+        <div class="contenedor__login-register">
+            <form action="db/recovery_acc.php" method="post">
+                <h2>Recuperar Contraseña</h2>
+                <input type="text" id="nombrecompleto" name="nombrecompleto" placeholder="Nombre completo" required>
+                <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                <input type="text" id="usuario" name="usuario" placeholder="Nombre de usuario" required>
+                <input type="password" id="nueva_contrasena" name="nueva_contrasena" placeholder="Nueva contraseña" required>
+                <button type="submit">Actualizar Contraseña</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
