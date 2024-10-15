@@ -93,7 +93,7 @@ Este código utiliza consultas preparadas para mayor seguridad contra inyeccione
 8. **Cierre de conexión**: Finalmente, se cierra la conexión a la base de datos.
 
 ## Configuración de eventos
-![Formulario de 15](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/15.png)
+![Formulario de 15](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/24.png)
 
 1. **Event listeners**:
    - Se añaden event listeners a los botones de inicio de sesión y registro.
@@ -116,6 +116,31 @@ Este código utiliza consultas preparadas para mayor seguridad contra inyeccione
    - También ajusta los estilos y la posición de los elementos según el ancho de la ventana.
 
 Este código está diseñado para una interfaz de usuario que alterna entre formularios de inicio de sesión y registro en la misma pagina.
+
+## Implementación de desplazamiento suave
+![Formulario de 15](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/15.png)
+
+1. **Esperar a que el DOM esté completamente cargado**:
+   - Se asegura que el código se ejecute una vez que todo el contenido del DOM esté disponible.
+
+2. **Selección de elementos**:
+   - Se seleccionan todos los elementos con la clase `scroll-link`.
+
+3. **Añadir event listeners**:
+   - Se añade un event listener de clic a cada enlace seleccionado.
+
+4. **Definición de la función `smoothScroll`**:
+   - Previene el comportamiento predeterminado del enlace.
+   - Calcula la posición de destino y la distancia a recorrer.
+   - Inicia una animación de desplazamiento suave.
+
+5. **Animación del desplazamiento**:
+   - Se utiliza `requestAnimationFrame` para animar el desplazamiento.
+   - Se implementa una función de aceleración cúbica para un efecto más natural.
+   - El desplazamiento se realiza durante 1000 ms (1 segundo).
+
+Este código permite crear un efecto de desplazamiento suave al hacer clic en enlaces de la página, mejorando la experiencia del usuario al navegar entre secciones.
+
 ![Formulario de 16](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/16.png)
 ![Formulario de 17](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/17.png)
 ![Formulario de 18](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/18.png)
