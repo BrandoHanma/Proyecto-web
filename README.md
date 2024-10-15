@@ -30,6 +30,7 @@ Gaming Store es una página web de comercio electrónico especializada en produc
 ![Formulario de ](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/12.png)
 
 ### Código
+## Recuperar Contraseña
 ![Formulario de 13](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/13.png)
 
 1. **Conexión a la base de datos**: Se incluye un archivo de conexión a la base de datos.
@@ -47,8 +48,7 @@ Gaming Store es una página web de comercio electrónico especializada en produc
      - Se prepara otra consulta para actualizar la contraseña.
      - Si la actualización es exitosa, se muestra un mensaje de éxito y se redirige al usuario a la página de login.
      - Si hay un error en la actualización, se muestra un mensaje de error y se redirige a la página de nueva contraseña.
-   - Si no se encuentra un usuario que coincida:
-     - Se muestra un mensaje indicando que los datos no coinciden y se redirige a la página de nueva contraseña.
+   - Si no se encuentra un usuario que coincida Se muestra un mensaje indicando que los datos no coinciden y se redirige a la página del login.
 
 5. **Manejo de errores**:
    - Si hay errores en la preparación de las consultas SQL, se muestran mensajes de error apropiados.
@@ -57,8 +57,65 @@ Gaming Store es una página web de comercio electrónico especializada en produc
 6. **Cierre de conexión**: Finalmente, se cierra la conexión a la base de datos.
 
 Este código utiliza consultas preparadas para mayor seguridad contra inyecciones SQL.
+
+## Proceso de registro de usuario
 ![Formulario de 14](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/14.png)
+
+1. **Conexión a la base de datos**: Se incluye un archivo de conexión a la base de datos.
+
+2. **Verificación de datos**: Se verifica si se han enviado todos los datos requeridos (nombre completo, contraseña, email y usuario) a través de POST.
+
+3. **Comprobación de datos completos**:
+   - Si los datos están completos:
+     - Se sanitizan los datos para prevenir inyecciones SQL.
+     - La contraseña se hashea por seguridad.
+
+4. **Verificación de unicidad**:
+   - Se verifica si el email ya está registrado en la base de datos:
+     - Si existe, se muestra un mensaje de error y se redirige al usuario.
+   - Se verifica si el nombre de usuario ya está en uso:
+     - Si existe, se muestra un mensaje de error y se redirige al usuario.
+
+5. **Inserción de usuario**:
+   - Si el email y el usuario son únicos, se prepara una consulta SQL para insertar el nuevo usuario:
+     - Se utiliza una consulta preparada para mayor seguridad.
+     - Se insertan los datos del usuario en la base de datos.
+   
+6. **Manejo de inserción**:
+   - Si la inserción es exitosa:
+     - Se muestra un mensaje de éxito y se redirige al usuario a la página de login.
+   - Si hay un error, se muestra un mensaje de error y se redirige de vuelta.
+
+7. **Manejo de errores**:
+   - Si hay un error en la preparación de la consulta SQL, se muestra un mensaje de error.
+   - Si los datos POST no están completos inicialmente, se muestra un mensaje pidiendo al usuario que complete todos los campos.
+
+8. **Cierre de conexión**: Finalmente, se cierra la conexión a la base de datos.
+
+## Configuración de eventos
 ![Formulario de 15](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/15.png)
+
+1. **Event listeners**:
+   - Se añaden event listeners a los botones de inicio de sesión y registro.
+   - Se añade un event listener al evento `resize` de la ventana.
+
+2. **Selección de elementos del DOM**:
+   - Se seleccionan varios elementos del formulario y contenedores usando `querySelector`.
+
+3. **Función `anchoPage()`**:
+   - Ajusta la disposición de los elementos según el ancho de la ventana.
+   - Si el ancho es mayor a 850px, muestra ambas cajas traseras.
+   - Si es menor, ajusta la visualización para un diseño más compacto.
+
+4. **Función `iniciarSesion()`**:
+   - Maneja la visualización cuando se hace clic en "Iniciar Sesión".
+   - Ajusta los estilos y la posición de los elementos según el ancho de la ventana.
+
+5. **Función `register()`**:
+   - Maneja la visualización cuando se hace clic en "Registrarse".
+   - También ajusta los estilos y la posición de los elementos según el ancho de la ventana.
+
+Este código está diseñado para una interfaz de usuario que alterna entre formularios de inicio de sesión y registro en la misma pagina.
 ![Formulario de 16](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/16.png)
 ![Formulario de 17](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/17.png)
 ![Formulario de 18](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/18.png)
