@@ -118,7 +118,7 @@ Este código utiliza consultas preparadas para mayor seguridad contra inyeccione
 Este código está diseñado para una interfaz de usuario que alterna entre formularios de inicio de sesión y registro en la misma pagina.
 
 ## Implementación de desplazamiento suave
-![Formulario de 15](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/15.png)
+![Formulario de 16](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/15.png)
 
 1. **Esperar a que el DOM esté completamente cargado**:
    - Se asegura que el código se ejecute una vez que todo el contenido del DOM esté disponible.
