@@ -31,6 +31,32 @@ Gaming Store es una página web de comercio electrónico especializada en produc
 
 ### Código
 ![Formulario de 13](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/13.png)
+
+1. **Conexión a la base de datos**: Se incluye un archivo de conexión a la base de datos.
+
+2. **Verificación de datos**: Se verifica si se han enviado todos los datos requeridos (nombre completo, nueva contraseña, email y usuario) a través de POST.
+
+3. **Comprobación de datos completos**:
+   - Si los datos están completos:
+     - Se sanitizan los datos para prevenir inyecciones SQL.
+     - La nueva contraseña se hashea por seguridad.
+
+4. **Consulta SQL**:
+   - Se prepara una consulta SQL para verificar si existe un usuario con los datos proporcionados.
+   - Si se encuentra un usuario que coincide:
+     - Se prepara otra consulta para actualizar la contraseña.
+     - Si la actualización es exitosa, se muestra un mensaje de éxito y se redirige al usuario a la página de login.
+     - Si hay un error en la actualización, se muestra un mensaje de error y se redirige a la página de nueva contraseña.
+   - Si no se encuentra un usuario que coincida:
+     - Se muestra un mensaje indicando que los datos no coinciden y se redirige a la página de nueva contraseña.
+
+5. **Manejo de errores**:
+   - Si hay errores en la preparación de las consultas SQL, se muestran mensajes de error apropiados.
+   - Si los datos POST no están completos inicialmente, se muestra un mensaje pidiendo al usuario que complete todos los campos.
+
+6. **Cierre de conexión**: Finalmente, se cierra la conexión a la base de datos.
+
+Este código utiliza consultas preparadas para mayor seguridad contra inyecciones SQL.
 ![Formulario de 14](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/14.png)
 ![Formulario de 15](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/15.png)
 ![Formulario de 16](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/16.png)
@@ -50,16 +76,19 @@ Gaming Store es una página web de comercio electrónico especializada en produc
 - MySQL
 - XAMPP
 
+## Requisitos previos
+- XAMPP instalado y configurado en tu sistema.
+- MYSQL instalado.
+- Backup de la base de datos proporcionada.
+  
 ## Instalación y ejecución
 1. Clona o descarga el repositorio en tu máquina local.
-2. Asegúrate de tener XAMPP instalado en tu sistema.
+2. Asegúrate de tener XAMPP y MYSQL instalado en tu sistema.
 3. Coloca los archivos del proyecto en la carpeta `htdocs` de tu instalación de XAMPP.
 4. Inicia los servicios de Apache y MySQL en XAMPP.
 5. Importa la base de datos proporcionada en el archivo SQL a tu servidor MySQL.
-6. Accede al proyecto a través de tu navegador web utilizando la URL local correspondiente (por ejemplo, `http://localhost/gaming-store`).
+6. Accede al proyecto a través de tu navegador web utilizando la URL local correspondiente (por ejemplo, `http://localhost/Proyecto-web`).
 
-## Requisitos previos
-- XAMPP instalado y configurado en tu sistema.
 
 ## Contribución
 Actualmente, este proyecto no está abierto a contribuciones externas.
