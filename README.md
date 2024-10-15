@@ -12,18 +12,22 @@ Gaming Store es una página web de comercio electrónico especializada en produc
   - Sección "Acerca de nosotros"
   - Formulario de contacto
 
-## Capturas de pantalla
-### Interfaz de usuario
+## Interfaz de usuario
+### Login
 ![Login](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/1(1).png) 
+### Registro de Usuarios
 ![Login-Registro](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/2(1).png)
+### Recuperar contraseña
 ![Formulario de ](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/3(1).png)
+### Index
 ![Formulario de ](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/4.png)
 ![Formulario de ](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/5.png)
 ![Formulario de ](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/6.png)
 ![Formulario de ](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/7.png)
+### Acerca de nosotros/Contactanos
 ![Formulario de ](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/8.png)
 
-### Base de datos
+## Base de datos
 ![Formulario de ](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/9.png)
 ![Formulario de ](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/10.png)
 ![Formulario de ](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/11.png)
