@@ -250,7 +250,6 @@ Este código permite crear un efecto de desplazamiento suave al hacer clic en en
 ![Formulario de 16](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/16.png)
 ![Formulario de 17](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/17.png)
 ## Proceso de inicio de sesión
-
 1. **Inicio de sesión PHP**:
    - Se inicia la sesión PHP y se conecta a la base de datos.
 
