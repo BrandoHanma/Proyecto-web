@@ -93,7 +93,7 @@ Este código utiliza consultas preparadas para mayor seguridad contra inyeccione
 8. **Cierre de conexión**: Finalmente, se cierra la conexión a la base de datos.
 
 ## Configuración de eventos
-![Formulario de 15](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/24.png)
+![Formulario de 15](https://github.com/BrandoHanma/Proyecto-web/blob/7ead06edbc94d14103c19ff74d6b8541a70d6804/pruebas/24.png)
 
 1. **Event listeners**:
    - Se añaden event listeners a los botones de inicio de sesión y registro.
