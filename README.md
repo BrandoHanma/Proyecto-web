@@ -143,10 +143,74 @@ Este código permite crear un efecto de desplazamiento suave al hacer clic en en
 
 ![Formulario de 16](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/16.png)
 ![Formulario de 17](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/17.png)
+## Proceso de inicio de sesión
+
+1. **Inicio de sesión PHP**:
+   - Se inicia la sesión PHP y se conecta a la base de datos.
+
+2. **Verificación de la solicitud**:
+   - Se verifica si la solicitud es de tipo POST.
+
+3. **Sanitización y validación**:
+   - Se sanitizan y validan los datos de entrada (email y contraseña).
+   - Se comprueba que los campos no estén vacíos.
+
+4. **Consulta SQL**:
+   - Se prepara y ejecuta una consulta SQL segura para buscar el usuario por email.
+
+5. **Verificación del usuario**:
+   - Si encuentra el usuario:
+     - Se verifica la contraseña usando `password_verify()`.
+     - Si es correcta, se inicia sesión y se redirige al índice.
+     - Si es incorrecta, se muestra un error y se redirige al login.
+   - Si no encuentra el usuario, se muestra un error de email no registrado.
+
+6. **Manejo de errores**:
+   - Si los campos están vacíos, se muestra un error pidiendo completarlos.
+   - Si el método de solicitud no es POST, se redirige al login.
+
+
+Este proceso implementa un sistema de inicio de sesión seguro que valida las credenciales del usuario y proporciona retroalimentación adecuada en caso de errores.
+## Estructura del Index
 ![Formulario de 18](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/18.png)
 ![Formulario de 19](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/19.png)
 ![Formulario de 20](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/20.png)
 ![Formulario de 21](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/21.png)
+1. **Declaración del tipo de documento**:
+   - Se incluye la declaración del tipo de documento y la estructura básica HTML.
+
+2. **Encabezado (`<head>`)**:
+   - Contiene metadatos, el título de la página y un enlace a la hoja de estilos.
+
+3. **Cuerpo (`<body>`)**:
+   - Se aplica estilo inline para el cursor personalizado.
+
+4. **Barra de navegación**:
+   - Incluye un logo y enlaces de menú.
+
+5. **Sección hero**:
+   - Presenta un título, un subtítulo y un botón de llamada a la acción.
+
+6. **Sección de categorías**:
+   - Contiene imágenes y títulos para PCs, consolas y accesorios.
+
+7. **Sección de productos destacados**:
+   - Muestra imágenes, descripciones y precios de los productos.
+
+8. **Sección de blogs recientes**:
+   - Presenta artículos y enlaces a publicaciones recientes.
+
+9. **Sección "Acerca de nosotros"**:
+   - Incluye una imagen y un texto descriptivo sobre la empresa.
+
+10. **Pie de página**:
+    - Ofrece información de contacto y enlaces a redes sociales.
+
+11. **Scripts**:
+    - Se incluyen al final del documento, incluyendo Font Awesome y un script personalizado.
+
+Esta estructura proporciona una base sólida para una página web, organizando el contenido de manera clara y accesible, y mejorando la experiencia del usuario.
+
 ![Formulario de 22](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/22.png)
 ![Formulario de 23](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/23.png)
 
