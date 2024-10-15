@@ -60,7 +60,33 @@ Gaming Store es una página web de comercio electrónico especializada en produc
    - Script JavaScript enlazado al final del `<body>`.
      
 Esta estructura proporciona un diseño funcional para las secciones de inicio de sesión y registro, facilitando la interacción del usuario con formularios y opciones de recuperación de contraseña.
+![Formulario de 17](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/17.png)
+## Proceso de inicio de sesión
+1. **Inicio de sesión PHP**:
+   - Se inicia la sesión PHP y se conecta a la base de datos.
 
+2. **Verificación de la solicitud**:
+   - Se verifica si la solicitud es de tipo POST.
+
+3. **Sanitización y validación**:
+   - Se sanitizan y validan los datos de entrada (email y contraseña).
+   - Se comprueba que los campos no estén vacíos.
+
+4. **Consulta SQL**:
+   - Se prepara y ejecuta una consulta SQL segura para buscar el usuario por email.
+
+5. **Verificación del usuario**:
+   - Si encuentra el usuario:
+     - Se verifica la contraseña usando `password_verify()`.
+     - Si es correcta, se inicia sesión y se redirige al índice.
+     - Si es incorrecta, se muestra un error y se redirige al login.
+   - Si no encuentra el usuario, se muestra un error de email no registrado.
+
+6. **Manejo de errores**:
+   - Si los campos están vacíos, se muestra un error pidiendo completarlos.
+   - Si el método de solicitud no es POST, se redirige al login.
+
+Este proceso implementa un sistema de inicio de sesión seguro que valida las credenciales del usuario y proporciona retroalimentación adecuada en caso de errores.
 ## Proceso de registro de usuario
 ![Formulario de 14](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/14.png)
 
@@ -248,33 +274,6 @@ Este código está diseñado para una interfaz de usuario que alterna entre form
 Este código permite crear un efecto de desplazamiento suave al hacer clic en enlaces de la página, mejorando la experiencia del usuario al navegar entre secciones.
 
 ![Formulario de 16](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/16.png)
-![Formulario de 17](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/17.png)
-## Proceso de inicio de sesión
-1. **Inicio de sesión PHP**:
-   - Se inicia la sesión PHP y se conecta a la base de datos.
-
-2. **Verificación de la solicitud**:
-   - Se verifica si la solicitud es de tipo POST.
-
-3. **Sanitización y validación**:
-   - Se sanitizan y validan los datos de entrada (email y contraseña).
-   - Se comprueba que los campos no estén vacíos.
-
-4. **Consulta SQL**:
-   - Se prepara y ejecuta una consulta SQL segura para buscar el usuario por email.
-
-5. **Verificación del usuario**:
-   - Si encuentra el usuario:
-     - Se verifica la contraseña usando `password_verify()`.
-     - Si es correcta, se inicia sesión y se redirige al índice.
-     - Si es incorrecta, se muestra un error y se redirige al login.
-   - Si no encuentra el usuario, se muestra un error de email no registrado.
-
-6. **Manejo de errores**:
-   - Si los campos están vacíos, se muestra un error pidiendo completarlos.
-   - Si el método de solicitud no es POST, se redirige al login.
-
-Este proceso implementa un sistema de inicio de sesión seguro que valida las credenciales del usuario y proporciona retroalimentación adecuada en caso de errores.
 
 ## Tecnologías utilizadas
 - HTML
