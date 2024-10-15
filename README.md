@@ -30,33 +30,36 @@ Gaming Store es una página web de comercio electrónico especializada en produc
 ![Formulario de ](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/12.png)
 
 ### Código
-## Recuperar Contraseña
-![Formulario de 13](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/13.png)
+## Estructura del login
+![Formulario de 22](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/22.png)
 
-1. **Conexión a la base de datos**: Se incluye un archivo de conexión a la base de datos.
+1. **Declaración del tipo de documento**:
+   - Se incluye la declaración del tipo de documento HTML y la estructura básica.
 
-2. **Verificación de datos**: Se verifica si se han enviado todos los datos requeridos (nombre completo, nueva contraseña, email y usuario) a través de POST.
+2. **Sección `<head>`**:
+   - Contiene metadatos, el título, un enlace a una fuente de Google y un enlace a la hoja de estilos CSS.
 
-3. **Comprobación de datos completos**:
-   - Si los datos están completos:
-     - Se sanitizan los datos para prevenir inyecciones SQL.
-     - La nueva contraseña se hashea por seguridad.
+3. **Cuerpo (`<body>`)**:
+   - Se aplica estilo inline para un cursor personalizado.
 
-4. **Consulta SQL**:
-   - Se prepara una consulta SQL para verificar si existe un usuario con los datos proporcionados.
-   - Si se encuentra un usuario que coincide:
-     - Se prepara otra consulta para actualizar la contraseña.
-     - Si la actualización es exitosa, se muestra un mensaje de éxito y se redirige al usuario a la página de login.
-     - Si hay un error en la actualización, se muestra un mensaje de error y se redirige a la página de nueva contraseña.
-   - Si no se encuentra un usuario que coincida Se muestra un mensaje indicando que los datos no coinciden y se redirige a la página del login.
+4. **Estructura principal (`<main>`)**:
+   - Contiene:
+     - Un contenedor general.
+     - Una "caja trasera" con dos secciones:
+       - **a.** Para iniciar sesión.
+       - **b.** Para registrarse.
 
-5. **Manejo de errores**:
-   - Si hay errores en la preparación de las consultas SQL, se muestran mensajes de error apropiados.
-   - Si los datos POST no están completos inicialmente, se muestra un mensaje pidiendo al usuario que complete todos los campos.
+5. **Contenedor para formularios**:
+   - Formulario de inicio de sesión con campos para correo y contraseña.
+   - Formulario de registro con campos para nombre, correo, usuario y contraseña.
 
-6. **Cierre de conexión**: Finalmente, se cierra la conexión a la base de datos.
+6. **Recuperación de contraseña**:
+   - Enlace para la recuperación de contraseña en el formulario de registro.
 
-Este código utiliza consultas preparadas para mayor seguridad contra inyecciones SQL.
+7. **Scripts**:
+   - Script JavaScript enlazado al final del `<body>`.
+     
+Esta estructura proporciona un diseño funcional para las secciones de inicio de sesión y registro, facilitando la interacción del usuario con formularios y opciones de recuperación de contraseña.
 
 ## Proceso de registro de usuario
 ![Formulario de 14](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/14.png)
@@ -91,6 +94,109 @@ Este código utiliza consultas preparadas para mayor seguridad contra inyeccione
    - Si los datos POST no están completos inicialmente, se muestra un mensaje pidiendo al usuario que complete todos los campos.
 
 8. **Cierre de conexión**: Finalmente, se cierra la conexión a la base de datos.
+
+Este código nos permite crear un usuario de forma segura.
+
+## Recuperar Contraseña
+![Formulario de 13](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/13.png)
+
+1. **Conexión a la base de datos**: Se incluye un archivo de conexión a la base de datos.
+
+2. **Verificación de datos**: Se verifica si se han enviado todos los datos requeridos (nombre completo, nueva contraseña, email y usuario) a través de POST.
+
+3. **Comprobación de datos completos**:
+   - Si los datos están completos:
+     - Se sanitizan los datos para prevenir inyecciones SQL.
+     - La nueva contraseña se hashea por seguridad.
+
+4. **Consulta SQL**:
+   - Se prepara una consulta SQL para verificar si existe un usuario con los datos proporcionados.
+   - Si se encuentra un usuario que coincide:
+     - Se prepara otra consulta para actualizar la contraseña.
+     - Si la actualización es exitosa, se muestra un mensaje de éxito y se redirige al usuario a la página de login.
+     - Si hay un error en la actualización, se muestra un mensaje de error y se redirige a la página de nueva contraseña.
+   - Si no se encuentra un usuario que coincida Se muestra un mensaje indicando que los datos no coinciden y se redirige a la página del login.
+
+5. **Manejo de errores**:
+   - Si hay errores en la preparación de las consultas SQL, se muestran mensajes de error apropiados.
+   - Si los datos POST no están completos inicialmente, se muestra un mensaje pidiendo al usuario que complete todos los campos.
+
+6. **Cierre de conexión**: Finalmente, se cierra la conexión a la base de datos.
+
+Este código utiliza consultas preparadas para mayor seguridad contra inyecciones SQL.
+## Estructura de Recuperar contraseña
+
+![Formulario de 23](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/23.png)
+
+1. **Declaración del tipo de documento**:
+   - Se incluye la declaración del tipo de documento HTML5.
+
+2. **Sección `<head>`**:
+   - Se establece la codificación de caracteres a UTF-8.
+   - Se configura la vista para dispositivos móviles, permitiendo que la página sea responsiva.
+   - Se define el título de la página que aparece en la pestaña del navegador.
+   - Se enlaza una hoja de estilos CSS externa para dar formato a la página.
+
+3. **Cuerpo (`<body>`)**:
+   - Se incluye un estilo interno que cambia el cursor del mouse a una imagen personalizada (`cursor.png`).
+
+4. **Estructura principal (`<main>`)**:
+   - Contiene:
+     - Un contenedor trasero vacío (`<div class="caja__trasera">`).
+     - Un contenedor para el formulario de recuperación de contraseña.
+
+5. **Formulario de recuperación de contraseña**:
+   - Se define un formulario que envía los datos a `db/recovery_acc.php` usando el método POST.
+   - Incluye un título (`<h2>`) que indica que es para recuperar la contraseña.
+   - Se añaden campos de entrada para:
+     - Nombre completo.
+     - Correo electrónico.
+     - Nombre de usuario.
+     - Nueva contraseña.
+   - Todos los campos son requeridos para poder enviar el formulario.
+   - Se incluye un botón para enviar el formulario y actualizar la contraseña.
+     
+Este código nos permite recuperar nuestra contraseña en caso de haberla olvidado.
+
+## Estructura del Index
+![Formulario de 18](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/18.png)
+![Formulario de 19](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/19.png)
+![Formulario de 20](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/20.png)
+![Formulario de 21](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/21.png)
+1. **Declaración del tipo de documento**:
+   - Se incluye la declaración del tipo de documento y la estructura básica HTML.
+
+2. **Encabezado (`<head>`)**:
+   - Contiene metadatos, el título de la página y un enlace a la hoja de estilos.
+
+3. **Cuerpo (`<body>`)**:
+   - Se aplica estilo inline para el cursor personalizado.
+
+4. **Barra de navegación**:
+   - Incluye un logo y enlaces de menú.
+
+5. **Sección hero**:
+   - Presenta un título, un subtítulo y un botón de llamada a la acción.
+
+6. **Sección de categorías**:
+   - Contiene imágenes y títulos para PCs, consolas y accesorios.
+
+7. **Sección de productos destacados**:
+   - Muestra imágenes, descripciones y precios de los productos.
+
+8. **Sección de blogs recientes**:
+   - Presenta artículos y enlaces a publicaciones recientes.
+
+9. **Sección "Acerca de nosotros"**:
+   - Incluye una imagen y un texto descriptivo sobre la empresa.
+
+10. **Pie de página**:
+    - Ofrece información de contacto y enlaces a redes sociales.
+
+11. **Scripts**:
+    - Se incluyen al final del documento, incluyendo Font Awesome y un script personalizado.
+
+Esta estructura proporciona una base sólida para una página web, organizando el contenido de manera clara y accesible, y mejorando la experiencia del usuario.
 
 ## Configuración de eventos
 ![Formulario de 15](https://github.com/BrandoHanma/Proyecto-web/blob/7ead06edbc94d14103c19ff74d6b8541a70d6804/pruebas/24.png)
@@ -169,50 +275,7 @@ Este código permite crear un efecto de desplazamiento suave al hacer clic en en
    - Si los campos están vacíos, se muestra un error pidiendo completarlos.
    - Si el método de solicitud no es POST, se redirige al login.
 
-
 Este proceso implementa un sistema de inicio de sesión seguro que valida las credenciales del usuario y proporciona retroalimentación adecuada en caso de errores.
-## Estructura del Index
-![Formulario de 18](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/18.png)
-![Formulario de 19](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/19.png)
-![Formulario de 20](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/20.png)
-![Formulario de 21](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/21.png)
-1. **Declaración del tipo de documento**:
-   - Se incluye la declaración del tipo de documento y la estructura básica HTML.
-
-2. **Encabezado (`<head>`)**:
-   - Contiene metadatos, el título de la página y un enlace a la hoja de estilos.
-
-3. **Cuerpo (`<body>`)**:
-   - Se aplica estilo inline para el cursor personalizado.
-
-4. **Barra de navegación**:
-   - Incluye un logo y enlaces de menú.
-
-5. **Sección hero**:
-   - Presenta un título, un subtítulo y un botón de llamada a la acción.
-
-6. **Sección de categorías**:
-   - Contiene imágenes y títulos para PCs, consolas y accesorios.
-
-7. **Sección de productos destacados**:
-   - Muestra imágenes, descripciones y precios de los productos.
-
-8. **Sección de blogs recientes**:
-   - Presenta artículos y enlaces a publicaciones recientes.
-
-9. **Sección "Acerca de nosotros"**:
-   - Incluye una imagen y un texto descriptivo sobre la empresa.
-
-10. **Pie de página**:
-    - Ofrece información de contacto y enlaces a redes sociales.
-
-11. **Scripts**:
-    - Se incluyen al final del documento, incluyendo Font Awesome y un script personalizado.
-
-Esta estructura proporciona una base sólida para una página web, organizando el contenido de manera clara y accesible, y mejorando la experiencia del usuario.
-
-![Formulario de 22](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/22.png)
-![Formulario de 23](https://github.com/BrandoHanma/Proyecto-web/blob/49d2504912399abc7c8eb7b7e95f0a7445dcbd5e/pruebas/23.png)
 
 ## Tecnologías utilizadas
 - HTML
